@@ -2,10 +2,10 @@
 
 ## Biodata
 Nama : Mohamad Ilman huda \
-Kelas : 07TPLE007 \
-Mata Kuliah : Testing QA \
-URL WEB : https://github.com/hudilman/spk-saw \
-URL HOSTING : https://spk.mohamadilmanhuda.my.id/ \
+Kelas : 07TPLE007 \n
+Mata Kuliah : Testing QA \n
+URL WEB : https://github.com/hudilman/spk-saw \n
+URL HOSTING : https://spk.mohamadilmanhuda.my.id/ \n
 
 ## Penjelasan
 Disini saya menjalankan automasi web spk yang saya buat menggunakan framework codeigniter, disini yang saya test antara lain :
