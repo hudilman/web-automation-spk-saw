@@ -6,7 +6,7 @@ Kelas : 07TPLE007 \
 Mata Kuliah : Testing QA
 
 ## Hasil Test CMD
-![run fungsi test_post_card](https://github.com/hudilman/web-automation-spk-saw/test%20cmd.PNG?raw=true)
+![run fungsi test_post_card](https://github.com/hudilman/web-automation-spk-saw/test%20cmd.png?raw=true)
 
 ## Install requirements
 
