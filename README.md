@@ -1,8 +1,13 @@
-# basic-automation
+# Laporan Tugas UAS TESTING QA - Mohamad Ilman Huda
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+## Biodata
+Nama : Mohamad Ilman huda \
+Kelas : 07TPLE007 \
+Mata Kuliah : Testing QA
+
+## Hasil Test CMD
+![run fungsi test_post_card](https://github.com/hudilman/web-automation-spk-saw/test%20cmd.PNG?raw=true)
+
 ## Install requirements
 
   ### Install, create and activate virtualenv
