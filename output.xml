@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231223 22:31:00.073" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite-1" source="D:\Downloads\basic-automation-main (1)\basic-automation-main\project-demo\test-suite-1.robot">
+<test id="s1-t1" name="Login Failed Test" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 22:31:00.322" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/web_spk_mohamad_ilman_huda'.</msg>
+<status status="PASS" starttime="20231223 22:31:00.322" endtime="20231223 22:31:02.794"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>${InvalidUsername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:02.798" level="INFO">Typing text 'invalid_admin' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20231223 22:31:02.796" endtime="20231223 22:31:02.944"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${InvalidPassword}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:02.945" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20231223 22:31:02.982" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231223 22:31:03.053" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231223 22:31:02.944" endtime="20231223 22:31:03.053"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:03.054" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 22:31:03.054" endtime="20231223 22:31:03.214"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//div[contains(@class,'alert-danger')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231223 22:31:03.248" level="INFO">Element 'xpath=//div[contains(@class,'alert-danger')]' is displayed.</msg>
+<status status="PASS" starttime="20231223 22:31:03.215" endtime="20231223 22:31:03.248"/>
+</kw>
+<tag>login</tag>
+<status status="PASS" starttime="20231223 22:31:00.321" endtime="20231223 22:31:03.250"/>
+</test>
+<test id="s1-t2" name="Login and Access Alternative Page Test" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 22:31:03.252" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/web_spk_mohamad_ilman_huda'.</msg>
+<status status="PASS" starttime="20231223 22:31:03.252" endtime="20231223 22:31:05.228"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:05.232" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20231223 22:31:05.229" endtime="20231223 22:31:05.354"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:05.355" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20231223 22:31:05.391" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231223 22:31:05.435" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231223 22:31:05.355" endtime="20231223 22:31:05.435"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:05.437" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 22:31:05.436" endtime="20231223 22:31:05.750"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>asdasd</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231223 22:31:05.750" level="INFO">Opening url 'asdasd'</msg>
+<msg timestamp="20231223 22:31:06.049" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 22:31:06.050" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=120.0.6099.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8CA2142+3514994]
+	(No symbol) [0x00007FF6B88C0CE2]
+	(No symbol) [0x00007FF6B87674C3]
+	(No symbol) [0x00007FF6B8750F3B]
+	(No symbol) [0x00007FF6B874EE85]
+	(No symbol) [0x00007FF6B874F603]
+	(No symbol) [0x00007FF6B876A0FD]
+	(No symbol) [0x00007FF6B87F2E01]
+	(No symbol) [0x00007FF6B87D5FEA]
+	(No symbol) [0x00007FF6B87F28F6]
+	(No symbol) [0x00007FF6B87D5D93]
+	(No symbol) [0x00007FF6B87A4BDC]
+	(No symbol) [0x00007FF6B87A5C64]
+	GetHandleVerifier [0x00007FF6B8CCE16B+3695259]
+	GetHandleVerifier [0x00007FF6B8D26737+4057191]
+	GetHandleVerifier [0x00007FF6B8D1E4E3+4023827]
+	GetHandleVerifier [0x00007FF6B89F04F9+689705]
+	(No symbol) [0x00007FF6B88CC048]
+	(No symbol) [0x00007FF6B88C8044]
+	(No symbol) [0x00007FF6B88C81C9]
+	(No symbol) [0x00007FF6B88B88C4]
+	BaseThreadInitThunk [0x00007FFFBB8D7344+20]
+	RtlUserThreadStart [0x00007FFFBC4826B1+33]
+</msg>
+<status status="FAIL" starttime="20231223 22:31:05.750" endtime="20231223 22:31:06.088"/>
+</kw>
+<tag>login</tag>
+<status status="FAIL" starttime="20231223 22:31:03.251" endtime="20231223 22:31:06.089">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=120.0.6099.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8CA2142+3514994]
+	(No symbol) [0x00007FF6B88C0CE2]
+	(No symbol) [0x00007FF6B87674C3]
+	(No symbol) [0x00007FF6B8750F3B]
+	(No symbol) [0x00007FF6B874EE85]
+	(No symbol) [0x00007FF6B874F603]
+	(No symbol) [0x00007FF6B876A0FD]
+	(No symbol) [0x00007FF6B87F2E01]
+	(No symbol) [0x00007FF6B87D5FEA]
+	(No symbol) [0x00007FF6B87F28F6]
+	(No symbol) [0x00007FF6B87D5D93]
+	(No symbol) [0x00007FF6B87A4BDC]
+	(No symbol) [0x00007FF6B87A5C64]
+	GetHandleVerifier [0x00007FF6B8CCE16B+3695259]
+	GetHandleVerifier [0x00007FF6B8D26737+4057191]
+	GetHandleVerifier [0x00007FF6B8D1E4E3+4023827]
+	GetHandleVerifier [0x00007FF6B89F04F9+689705]
+	(No symbol) [0x00007FF6B88CC048]
+	(No symbol) [0x00007FF6B88C8044]
+	(No symbol) [0x00007FF6B88C81C9]
+	(No symbol) [0x00007FF6B88B88C4]
+	BaseThreadInitThunk [0x00007FFFBB8D7344+20]
+	RtlUserThreadStart [0x00007FFFBC4826B1+33]
+</status>
+</test>
+<test id="s1-t3" name="Perform Alternative Actions" line="28">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@data-target='#addModal']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:06.093" level="INFO">Clicking element 'xpath=//a[@data-target='#addModal']'.</msg>
+<msg timestamp="20231223 22:31:06.240" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 22:31:06.241" level="FAIL">Element with locator 'xpath=//a[@data-target='#addModal']' not found.</msg>
+<status status="FAIL" starttime="20231223 22:31:06.093" endtime="20231223 22:31:06.242"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//div[@id='addModal' and contains(@class, 'show')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 22:31:06.243" endtime="20231223 22:31:06.243"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='namepost']</arg>
+<arg>Ilman Huda Ganteng</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 22:31:06.243" endtime="20231223 22:31:06.244"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 22:31:06.244" endtime="20231223 22:31:06.244"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231223 22:31:06.244" endtime="20231223 22:31:06.244"/>
+</kw>
+<tag>alternative</tag>
+<status status="FAIL" starttime="20231223 22:31:06.092" endtime="20231223 22:31:06.245">Element with locator 'xpath=//a[@data-target='#addModal']' not found.</status>
+</test>
+<test id="s1-t4" name="Logout Test" line="36">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Logout')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 22:31:06.249" level="INFO">Clicking element 'xpath=//a[contains(text(),'Logout')]'.</msg>
+<status status="PASS" starttime="20231223 22:31:06.248" endtime="20231223 22:31:06.394"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231223 22:31:06.425" level="INFO">Element 'xpath=//button[@type='submit']' is displayed.</msg>
+<status status="PASS" starttime="20231223 22:31:06.395" endtime="20231223 22:31:06.425"/>
+</kw>
+<tag>logout</tag>
+<status status="PASS" starttime="20231223 22:31:06.247" endtime="20231223 22:31:06.426"/>
+</test>
+<status status="FAIL" starttime="20231223 22:31:00.076" endtime="20231223 22:31:06.430"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">alternative</stat>
+<stat pass="1" fail="1" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">logout</stat>
+</tag>
+<suite>
+<stat pass="2" fail="2" skip="0" id="s1" name="Test-Suite-1">Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

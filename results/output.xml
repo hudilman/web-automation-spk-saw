@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on darwin)" generated="20231211 14:57:30.343" rpa="false" schemaversion="4">
+<suite id="s1" name="Basic-Automation" source="/Users/agungperdananto/Workspace/automation/basic-automation">
+<suite id="s1-s1" name="Project-Demo" source="/Users/agungperdananto/Workspace/automation/basic-automation/project-demo">
+<suite id="s1-s1-s1" name="Test-Suite-1" source="/Users/agungperdananto/Workspace/automation/basic-automation/project-demo/test-suite-1.robot">
+<test id="s1-s1-s1-t1" name="testcase-1" line="24">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:30.456" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:33.906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:33.907" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000102e404f4 chromedriver + 4162804
+1   chromedriver                        0x0000000102e3867c chromedriver + 4130428
+2   chromedriver                        0x0000000102a8fbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102a88324 chromedriver + 262948
+4   chromedriver                        0x0000000102a79c7c chromedriver + 203900
+5   chromedriver                        0x0000000102a78a98 chromedriver + 199320
+6   chromedriver                        0x0000000102a77b24 chromedriver + 195364
+7   chromedriver                        0x0000000102a77ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102a75e3c chromedriver + 187964
+9   chromedriver                        0x0000000102a769fc chromedriver + 190972
+10  chromedriver                        0x0000000102a925d8 chromedriver + 304600
+11  chromedriver                        0x0000000102b160b8 chromedriver + 843960
+12  chromedriver                        0x0000000102b15ab0 chromedriver + 842416
+13  chromedriver                        0x0000000102ac96bc chromedriver + 530108
+14  chromedriver                        0x0000000102aca930 chromedriver + 534832
+15  chromedriver                        0x0000000102e05e20 chromedriver + 3923488
+16  chromedriver                        0x0000000102e0a3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000102dee050 chromedriver + 3825744
+18  chromedriver                        0x0000000102e0af54 chromedriver + 3944276
+19  chromedriver                        0x0000000102de070c chromedriver + 3770124
+20  chromedriver                        0x0000000102e27998 chromedriver + 4061592
+21  chromedriver                        0x0000000102e27b10 chromedriver + 4061968
+22  chromedriver                        0x0000000102e382fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:30.456" endtime="20231211 14:57:33.911"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.911" endtime="20231211 14:57:33.912"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.912" endtime="20231211 14:57:33.912"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.912" endtime="20231211 14:57:33.912"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.912" endtime="20231211 14:57:33.912"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.912" endtime="20231211 14:57:33.912"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.912" endtime="20231211 14:57:33.912"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:30.456" endtime="20231211 14:57:33.913"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:33.913" endtime="20231211 14:57:33.913"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:30.455" endtime="20231211 14:57:33.913">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000102e404f4 chromedriver + 4162804
+1   chromedriver                        0x0000000102e3867c chromedriver + 4130428
+2   chromedriver                        0x0000000102a8fbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102a88324 chromedriver + 262948
+4   chromedriver                        0x0000000102a79c7c chromedriver + 203900
+5   chromedriver                        0x0000000102a78a98 chromedriver + 199320
+6   chromedriver                        0x0000000102a77b24 chromedriver + 195364
+7   chromedriver                        0x0000000102a77ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102a75e3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000102aca930 chromedriver + 534832
+15  chromedriver                        0x0000000102e05e20 chromedriver + 3923488
+16  chromedriver                        0x0000000102e0a3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000102dee050 chromedriver + 3825744
+18  chromedriver                        0x0000000102e0af54 chromedriver + 3944276
+19  chromedriver                        0x0000000102de070c chromedriver + 3770124
+20  chromedriver                        0x0000000102e27998 chromedriver + 4061592
+21  chromedriver                        0x0000000102e27b10 chromedriver + 4061968
+22  chromedriver                        0x0000000102e382fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<test id="s1-s1-s1-t2" name="testcase-2" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:33.915" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:35.330" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:35.330" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000102a484f4 chromedriver + 4162804
+1   chromedriver                        0x0000000102a4067c chromedriver + 4130428
+2   chromedriver                        0x0000000102697bc0 chromedriver + 293824
+3   chromedriver                        0x0000000102690324 chromedriver + 262948
+4   chromedriver                        0x0000000102681c7c chromedriver + 203900
+5   chromedriver                        0x0000000102680a98 chromedriver + 199320
+6   chromedriver                        0x000000010267fb24 chromedriver + 195364
+7   chromedriver                        0x000000010267fad0 chromedriver + 195280
+8   chromedriver                        0x000000010267de3c chromedriver + 187964
+9   chromedriver                        0x000000010267e9fc chromedriver + 190972
+10  chromedriver                        0x000000010269a5d8 chromedriver + 304600
+11  chromedriver                        0x000000010271e0b8 chromedriver + 843960
+12  chromedriver                        0x000000010271dab0 chromedriver + 842416
+13  chromedriver                        0x00000001026d16bc chromedriver + 530108
+14  chromedriver                        0x00000001026d2930 chromedriver + 534832
+15  chromedriver                        0x0000000102a0de20 chromedriver + 3923488
+16  chromedriver                        0x0000000102a123f4 chromedriver + 3941364
+17  chromedriver                        0x00000001029f6050 chromedriver + 3825744
+18  chromedriver                        0x0000000102a12f54 chromedriver + 3944276
+19  chromedriver                        0x00000001029e870c chromedriver + 3770124
+20  chromedriver                        0x0000000102a2f998 chromedriver + 4061592
+21  chromedriver                        0x0000000102a2fb10 chromedriver + 4061968
+22  chromedriver                        0x0000000102a402fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:33.914" endtime="20231211 14:57:35.331"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.332" endtime="20231211 14:57:35.332"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.332" endtime="20231211 14:57:35.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.332" endtime="20231211 14:57:35.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.332" endtime="20231211 14:57:35.332"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.333" endtime="20231211 14:57:35.333"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.333" endtime="20231211 14:57:35.333"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:35.333" endtime="20231211 14:57:35.333"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:33.914" endtime="20231211 14:57:35.333">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000102a484f4 chromedriver + 4162804
+1   chromedriver                        0x0000000102a4067c chromedriver + 4130428
+2   chromedriver                        0x0000000102697bc0 chromedriver + 293824
+3   chromedriver                        0x0000000102690324 chromedriver + 262948
+4   chromedriver                        0x0000000102681c7c chromedriver + 203900
+5   chromedriver                        0x0000000102680a98 chromedriver + 199320
+6   chromedriver                        0x000000010267fb24 chromedriver + 195364
+7   chromedriver                        0x000000010267fad0 chromedriver + 195280
+8   chromedriver                        0x000000010267de3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x00000001026d2930 chromedriver + 534832
+15  chromedriver                        0x0000000102a0de20 chromedriver + 3923488
+16  chromedriver                        0x0000000102a123f4 chromedriver + 3941364
+17  chromedriver                        0x00000001029f6050 chromedriver + 3825744
+18  chromedriver                        0x0000000102a12f54 chromedriver + 3944276
+19  chromedriver                        0x00000001029e870c chromedriver + 3770124
+20  chromedriver                        0x0000000102a2f998 chromedriver + 4061592
+21  chromedriver                        0x0000000102a2fb10 chromedriver + 4061968
+22  chromedriver                        0x0000000102a402fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<test id="s1-s1-s1-t3" name="testcase-3" line="40">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:35.335" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:36.775" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:36.776" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001010244f4 chromedriver + 4162804
+1   chromedriver                        0x000000010101c67c chromedriver + 4130428
+2   chromedriver                        0x0000000100c73bc0 chromedriver + 293824
+3   chromedriver                        0x0000000100c6c324 chromedriver + 262948
+4   chromedriver                        0x0000000100c5dc7c chromedriver + 203900
+5   chromedriver                        0x0000000100c5ca98 chromedriver + 199320
+6   chromedriver                        0x0000000100c5bb24 chromedriver + 195364
+7   chromedriver                        0x0000000100c5bad0 chromedriver + 195280
+8   chromedriver                        0x0000000100c59e3c chromedriver + 187964
+9   chromedriver                        0x0000000100c5a9fc chromedriver + 190972
+10  chromedriver                        0x0000000100c765d8 chromedriver + 304600
+11  chromedriver                        0x0000000100cfa0b8 chromedriver + 843960
+12  chromedriver                        0x0000000100cf9ab0 chromedriver + 842416
+13  chromedriver                        0x0000000100cad6bc chromedriver + 530108
+14  chromedriver                        0x0000000100cae930 chromedriver + 534832
+15  chromedriver                        0x0000000100fe9e20 chromedriver + 3923488
+16  chromedriver                        0x0000000100fee3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000100fd2050 chromedriver + 3825744
+18  chromedriver                        0x0000000100feef54 chromedriver + 3944276
+19  chromedriver                        0x0000000100fc470c chromedriver + 3770124
+20  chromedriver                        0x000000010100b998 chromedriver + 4061592
+21  chromedriver                        0x000000010100bb10 chromedriver + 4061968
+22  chromedriver                        0x000000010101c2fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:35.334" endtime="20231211 14:57:36.777"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.777" endtime="20231211 14:57:36.777"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.778" endtime="20231211 14:57:36.778"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.778" endtime="20231211 14:57:36.778"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.778" endtime="20231211 14:57:36.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.778" endtime="20231211 14:57:36.778"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.778" endtime="20231211 14:57:36.778"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:35.334" endtime="20231211 14:57:36.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.779" endtime="20231211 14:57:36.779"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.779" endtime="20231211 14:57:36.779"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:36.779" endtime="20231211 14:57:36.779"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:35.334" endtime="20231211 14:57:36.780">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001010244f4 chromedriver + 4162804
+1   chromedriver                        0x000000010101c67c chromedriver + 4130428
+2   chromedriver                        0x0000000100c73bc0 chromedriver + 293824
+3   chromedriver                        0x0000000100c6c324 chromedriver + 262948
+4   chromedriver                        0x0000000100c5dc7c chromedriver + 203900
+5   chromedriver                        0x0000000100c5ca98 chromedriver + 199320
+6   chromedriver                        0x0000000100c5bb24 chromedriver + 195364
+7   chromedriver                        0x0000000100c5bad0 chromedriver + 195280
+8   chromedriver                        0x0000000100c59e3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000100cae930 chromedriver + 534832
+15  chromedriver                        0x0000000100fe9e20 chromedriver + 3923488
+16  chromedriver                        0x0000000100fee3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000100fd2050 chromedriver + 3825744
+18  chromedriver                        0x0000000100feef54 chromedriver + 3944276
+19  chromedriver                        0x0000000100fc470c chromedriver + 3770124
+20  chromedriver                        0x000000010100b998 chromedriver + 4061592
+21  chromedriver                        0x000000010100bb10 chromedriver + 4061968
+22  chromedriver                        0x000000010101c2fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<test id="s1-s1-s1-t4" name="testcase-4" line="47">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:36.781" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:38.157" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:38.158" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000104d0c4f4 chromedriver + 4162804
+1   chromedriver                        0x0000000104d0467c chromedriver + 4130428
+2   chromedriver                        0x000000010495bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000104954324 chromedriver + 262948
+4   chromedriver                        0x0000000104945c7c chromedriver + 203900
+5   chromedriver                        0x0000000104944a98 chromedriver + 199320
+6   chromedriver                        0x0000000104943b24 chromedriver + 195364
+7   chromedriver                        0x0000000104943ad0 chromedriver + 195280
+8   chromedriver                        0x0000000104941e3c chromedriver + 187964
+9   chromedriver                        0x00000001049429fc chromedriver + 190972
+10  chromedriver                        0x000000010495e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001049e20b8 chromedriver + 843960
+12  chromedriver                        0x00000001049e1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001049956bc chromedriver + 530108
+14  chromedriver                        0x0000000104996930 chromedriver + 534832
+15  chromedriver                        0x0000000104cd1e20 chromedriver + 3923488
+16  chromedriver                        0x0000000104cd63f4 chromedriver + 3941364
+17  chromedriver                        0x0000000104cba050 chromedriver + 3825744
+18  chromedriver                        0x0000000104cd6f54 chromedriver + 3944276
+19  chromedriver                        0x0000000104cac70c chromedriver + 3770124
+20  chromedriver                        0x0000000104cf3998 chromedriver + 4061592
+21  chromedriver                        0x0000000104cf3b10 chromedriver + 4061968
+22  chromedriver                        0x0000000104d042fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:36.781" endtime="20231211 14:57:38.159"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.159" endtime="20231211 14:57:38.160"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.160" endtime="20231211 14:57:38.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.160" endtime="20231211 14:57:38.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.160" endtime="20231211 14:57:38.160"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.160" endtime="20231211 14:57:38.160"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.160" endtime="20231211 14:57:38.160"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:36.780" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='company']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:company</arg>
+<arg>${COMPANY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:title</arg>
+<arg>${TITLE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:location</arg>
+<arg>${LOCATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.161"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${JOBEMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.161" endtime="20231211 14:57:38.162"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:website</arg>
+<arg>${WEBSITE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.162" endtime="20231211 14:57:38.162"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:tags</arg>
+<arg>${TAGS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.162" endtime="20231211 14:57:38.162"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:description</arg>
+<arg>${DESCRIPTION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.162" endtime="20231211 14:57:38.162"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.162" endtime="20231211 14:57:38.162"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:38.162" endtime="20231211 14:57:38.162"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:36.780" endtime="20231211 14:57:38.163">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000104d0c4f4 chromedriver + 4162804
+1   chromedriver                        0x0000000104d0467c chromedriver + 4130428
+2   chromedriver                        0x000000010495bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000104954324 chromedriver + 262948
+4   chromedriver                        0x0000000104945c7c chromedriver + 203900
+5   chromedriver                        0x0000000104944a98 chromedriver + 199320
+6   chromedriver                        0x0000000104943b24 chromedriver + 195364
+7   chromedriver                        0x0000000104943ad0 chromedriver + 195280
+8   chromedriver                        0x0000000104941e3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104996930 chromedriver + 534832
+15  chromedriver                        0x0000000104cd1e20 chromedriver + 3923488
+16  chromedriver                        0x0000000104cd63f4 chromedriver + 3941364
+17  chromedriver                        0x0000000104cba050 chromedriver + 3825744
+18  chromedriver                        0x0000000104cd6f54 chromedriver + 3944276
+19  chromedriver                        0x0000000104cac70c chromedriver + 3770124
+20  chromedriver                        0x0000000104cf3998 chromedriver + 4061592
+21  chromedriver                        0x0000000104cf3b10 chromedriver + 4061968
+22  chromedriver                        0x0000000104d042fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<test id="s1-s1-s1-t5" name="testcase-5" line="62">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:38.164" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:39.621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:39.622" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001006e44f4 chromedriver + 4162804
+1   chromedriver                        0x00000001006dc67c chromedriver + 4130428
+2   chromedriver                        0x0000000100333bc0 chromedriver + 293824
+3   chromedriver                        0x000000010032c324 chromedriver + 262948
+4   chromedriver                        0x000000010031dc7c chromedriver + 203900
+5   chromedriver                        0x000000010031ca98 chromedriver + 199320
+6   chromedriver                        0x000000010031bb24 chromedriver + 195364
+7   chromedriver                        0x000000010031bad0 chromedriver + 195280
+8   chromedriver                        0x0000000100319e3c chromedriver + 187964
+9   chromedriver                        0x000000010031a9fc chromedriver + 190972
+10  chromedriver                        0x00000001003365d8 chromedriver + 304600
+11  chromedriver                        0x00000001003ba0b8 chromedriver + 843960
+12  chromedriver                        0x00000001003b9ab0 chromedriver + 842416
+13  chromedriver                        0x000000010036d6bc chromedriver + 530108
+14  chromedriver                        0x000000010036e930 chromedriver + 534832
+15  chromedriver                        0x00000001006a9e20 chromedriver + 3923488
+16  chromedriver                        0x00000001006ae3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000100692050 chromedriver + 3825744
+18  chromedriver                        0x00000001006aef54 chromedriver + 3944276
+19  chromedriver                        0x000000010068470c chromedriver + 3770124
+20  chromedriver                        0x00000001006cb998 chromedriver + 4061592
+21  chromedriver                        0x00000001006cbb10 chromedriver + 4061968
+22  chromedriver                        0x00000001006dc2fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:38.164" endtime="20231211 14:57:39.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.624"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.624"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.624"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.624" endtime="20231211 14:57:39.625"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:38.164" endtime="20231211 14:57:39.625"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.625" endtime="20231211 14:57:39.625"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.625" endtime="20231211 14:57:39.625"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:39.625" endtime="20231211 14:57:39.626"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:38.163" endtime="20231211 14:57:39.626">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001006e44f4 chromedriver + 4162804
+1   chromedriver                        0x00000001006dc67c chromedriver + 4130428
+2   chromedriver                        0x0000000100333bc0 chromedriver + 293824
+3   chromedriver                        0x000000010032c324 chromedriver + 262948
+4   chromedriver                        0x000000010031dc7c chromedriver + 203900
+5   chromedriver                        0x000000010031ca98 chromedriver + 199320
+6   chromedriver                        0x000000010031bb24 chromedriver + 195364
+7   chromedriver                        0x000000010031bad0 chromedriver + 195280
+8   chromedriver                        0x0000000100319e3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010036e930 chromedriver + 534832
+15  chromedriver                        0x00000001006a9e20 chromedriver + 3923488
+16  chromedriver                        0x00000001006ae3f4 chromedriver + 3941364
+17  chromedriver                        0x0000000100692050 chromedriver + 3825744
+18  chromedriver                        0x00000001006aef54 chromedriver + 3944276
+19  chromedriver                        0x000000010068470c chromedriver + 3770124
+20  chromedriver                        0x00000001006cb998 chromedriver + 4061592
+21  chromedriver                        0x00000001006cbb10 chromedriver + 4061968
+22  chromedriver                        0x00000001006dc2fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<test id="s1-s1-s1-t6" name="testcase-6" line="68">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 14:57:39.627" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231211 14:57:41.045" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231211 14:57:41.046" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001032184f4 chromedriver + 4162804
+1   chromedriver                        0x000000010321067c chromedriver + 4130428
+2   chromedriver                        0x0000000102e67bc0 chromedriver + 293824
+3   chromedriver                        0x0000000102e60324 chromedriver + 262948
+4   chromedriver                        0x0000000102e51c7c chromedriver + 203900
+5   chromedriver                        0x0000000102e50a98 chromedriver + 199320
+6   chromedriver                        0x0000000102e4fb24 chromedriver + 195364
+7   chromedriver                        0x0000000102e4fad0 chromedriver + 195280
+8   chromedriver                        0x0000000102e4de3c chromedriver + 187964
+9   chromedriver                        0x0000000102e4e9fc chromedriver + 190972
+10  chromedriver                        0x0000000102e6a5d8 chromedriver + 304600
+11  chromedriver                        0x0000000102eee0b8 chromedriver + 843960
+12  chromedriver                        0x0000000102eedab0 chromedriver + 842416
+13  chromedriver                        0x0000000102ea16bc chromedriver + 530108
+14  chromedriver                        0x0000000102ea2930 chromedriver + 534832
+15  chromedriver                        0x00000001031dde20 chromedriver + 3923488
+16  chromedriver                        0x00000001031e23f4 chromedriver + 3941364
+17  chromedriver                        0x00000001031c6050 chromedriver + 3825744
+18  chromedriver                        0x00000001031e2f54 chromedriver + 3944276
+19  chromedriver                        0x00000001031b870c chromedriver + 3770124
+20  chromedriver                        0x00000001031ff998 chromedriver + 4061592
+21  chromedriver                        0x00000001031ffb10 chromedriver + 4061968
+22  chromedriver                        0x00000001032102fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20231211 14:57:39.627" endtime="20231211 14:57:41.046"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.047" endtime="20231211 14:57:41.047"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:39.627" endtime="20231211 14:57:41.047"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.048" endtime="20231211 14:57:41.048"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='company']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.048" endtime="20231211 14:57:41.048"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231211 14:57:41.048" endtime="20231211 14:57:41.048"/>
+</kw>
+<kw name="Scroll Down Until End">
+<status status="NOT RUN" starttime="20231211 14:57:41.048" endtime="20231211 14:57:41.048"/>
+</kw>
+<status status="FAIL" starttime="20231211 14:57:39.626" endtime="20231211 14:57:41.048">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x00000001032184f4 chromedriver + 4162804
+1   chromedriver                        0x000000010321067c chromedriver + 4130428
+2   chromedriver                        0x0000000102e67bc0 chromedriver + 293824
+3   chromedriver                        0x0000000102e60324 chromedriver + 262948
+4   chromedriver                        0x0000000102e51c7c chromedriver + 203900
+5   chromedriver                        0x0000000102e50a98 chromedriver + 199320
+6   chromedriver                        0x0000000102e4fb24 chromedriver + 195364
+7   chromedriver                        0x0000000102e4fad0 chromedriver + 195280
+8   chromedriver                        0x0000000102e4de3c chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000102ea2930 chromedriver + 534832
+15  chromedriver                        0x00000001031dde20 chromedriver + 3923488
+16  chromedriver                        0x00000001031e23f4 chromedriver + 3941364
+17  chromedriver                        0x00000001031c6050 chromedriver + 3825744
+18  chromedriver                        0x00000001031e2f54 chromedriver + 3944276
+19  chromedriver                        0x00000001031b870c chromedriver + 3770124
+20  chromedriver                        0x00000001031ff998 chromedriver + 4061592
+21  chromedriver                        0x00000001031ffb10 chromedriver + 4061968
+22  chromedriver                        0x00000001032102fc chromedriver + 4129532
+23  libsystem_pthread.dylib             0x000000018bd45034 _pthread_start + 136
+24  libsystem_pthread.dylib             0x000000018bd3fe3c thread_start + 8</status>
+</test>
+<status status="FAIL" starttime="20231211 14:57:30.453" endtime="20231211 14:57:41.049"/>
+</suite>
+<status status="FAIL" starttime="20231211 14:57:30.361" endtime="20231211 14:57:41.051"/>
+</suite>
+<status status="FAIL" starttime="20231211 14:57:30.349" endtime="20231211 14:57:41.052"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Basic-Automation">Basic-Automation</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1" name="Project-Demo">Basic-Automation.Project-Demo</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1" name="Test-Suite-1">Basic-Automation.Project-Demo.Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
